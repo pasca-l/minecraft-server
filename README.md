@@ -12,13 +12,13 @@ $ docker compose up
 ```
 
 ### Connecting Minecraft
-1. Check host IP address.
+1. Connect to the server from Minecraft.
+- If the server is on localhost, server address can be specified as `localhost` or `127.0.0.1`.
+- If the server is on another device within the same network, server address is `inet` value of `en0`.
 ```
-$ ifconfig
+$ ifconfig en0
 ```
-- For connecting to host on the same network, IP address is written under `en0` as `inet` value.
-
-2. Connect to the server from Minecraft.
+<!-- - If the server is on another device outside of the local network, TO BE DETERMINED... -->
 
 ## Optimizations
 Set configurations below as starting values for server optimization. ([reference](https://github.com/YouHaveTrouble/minecraft-optimization))
