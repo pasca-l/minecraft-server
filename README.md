@@ -11,6 +11,10 @@ Minecraft server built in Docker
 $ docker compose up
 ```
 
+## Optimizations
+References
+- [Minecraft server optimization guide](https://github.com/YouHaveTrouble/minecraft-optimization)
+
 ## Todos
 - Set eula=true during docker image build.
 - Allow connections from outside of local network.
