@@ -11,6 +11,15 @@ Minecraft server built in Docker
 $ docker compose up
 ```
 
+### Connecting Minecraft
+1. Check host IP address.
+```
+$ ifconfig
+```
+- For connecting to host on the same network, IP address is written under `en0` as `inet` value.
+
+2. Connect to the server from Minecraft.
+
 ## Optimizations
 Set configurations below as starting values for server optimization. ([reference](https://github.com/YouHaveTrouble/minecraft-optimization))
 
