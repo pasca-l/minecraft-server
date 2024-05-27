@@ -14,7 +14,7 @@ $ docker compose up
 ## Optimizations
 Set configurations below as starting values for server optimization. ([reference](https://github.com/YouHaveTrouble/minecraft-optimization))
 
-### good starting value on `server.properties`
+### Good starting value on `server.properties`
 - ```sync-chunk-writes=false```
 
 Allows the server to save chunks off the main thread, lessening the load on the main tick loop.
