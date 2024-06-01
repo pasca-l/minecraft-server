@@ -10,6 +10,7 @@ Minecraft server built in Docker
 ```
 $ docker compose up
 ```
+- If starting for the first time, `eula.txt` is generated with `eula=false`, which needs to be updated to `eula=true` (agreeing to the EULA).
 
 ### Connecting Minecraft
 1. Connect to the server from Minecraft.
@@ -45,5 +46,4 @@ Allows to set the distance in chunks that will be sent to players. The total vie
 > The most widely used, high-performance Minecraft server that aims to fix gameplay and mechanics inconsistencies.
 
 ## Todos
-- Set eula=true during docker image build.
 - Allow connections from outside of local network.

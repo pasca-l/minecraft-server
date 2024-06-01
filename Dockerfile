@@ -11,5 +11,5 @@ RUN apt-get install -y openjdk-21-jre \
     && wget https://piston-data.mojang.com/v1/objects/145ff0858209bcfc164859ba735d4199aafa1eea/server.jar
 
 WORKDIR /home
-RUN echo eula=$EULA > eula.txt
+# run server with minimum settings
 CMD [ "java", "-Xmx1024M", "-Xms1024M", "-jar", "/opt/server.jar" ]

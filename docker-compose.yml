@@ -9,5 +9,15 @@ services:
       - "25565:25565"
     stdin_open: true
     tty: true
-    environment:
-      EULA: true
+
+    # Java command options
+    # - -Xmx specifies maximum heap memory size
+    # - -Xms specifies heap memory usage at start
+    # - -XX:+UseZGC enables Z garbage collector, which may improve performance
+    # Minecraft options
+    # - --bonusChest creates bonus chests during world creation
+    # - --eraseCache clears cache before running server
+    command: >
+      sh -c "
+        java -Xmx1024M -Xms1024M -jar /opt/server.jar
+      "
