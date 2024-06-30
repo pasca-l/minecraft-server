@@ -8,7 +8,7 @@ ENV TZ Asia/Tokyo
 # java versions openjdk-21-jre for minecraft v1.20.5^
 # minecraft server by version, archived at https://mcversions.net/
 RUN apt-get install -y openjdk-21-jre \
-    && wget https://piston-data.mojang.com/v1/objects/145ff0858209bcfc164859ba735d4199aafa1eea/server.jar
+    && wget https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar
 
 WORKDIR /home
 # run server with minimum settings
