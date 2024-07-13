@@ -1,5 +1,5 @@
 # Minecraft Server
-Minecraft server built in Docker
+Minecraft server built in Docker.
 
 ## Requirements
 - Docker 25.0.3
