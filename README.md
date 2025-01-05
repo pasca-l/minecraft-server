@@ -13,13 +13,14 @@ $ docker compose up
 - If starting for the first time, `eula.txt` is generated with `eula=false`, which needs to be updated to `eula=true` (agreeing to the EULA).
 
 ### Connecting Minecraft
-1. Connect to the server from Minecraft.
+1. Connect to the server from Minecraft, listening on port `25565` as default.
 - If the server is on localhost, server address can be specified as `localhost` or `127.0.0.1`.
 - If the server is on another device within the same network, server address is `inet` value of `en0`.
 ```
 $ ifconfig en0
 ```
-<!-- - If the server is on another device outside of the local network, TO BE DETERMINED... -->
+- If the server is on another device outside of the local network, server address is the public IP.
+  - The router of the local network should port forward to the server's listening port.
 
 ## Optimizations
 Set configurations below as starting values for server optimization. ([reference](https://github.com/YouHaveTrouble/minecraft-optimization))
@@ -44,6 +45,3 @@ Allows to set the distance in chunks that will be sent to players. The total vie
 ### Recommended server software
 - [Paper](https://github.com/PaperMC/Paper)
 > The most widely used, high-performance Minecraft server that aims to fix gameplay and mechanics inconsistencies.
-
-## Todos
-- Allow connections from outside of local network.
